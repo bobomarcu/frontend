@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+body{
+
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bar{
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    color: white;
+    height: 4vh;
+}.bar p {
+
+    font-size: 1.5vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.barRight{
+    margin-left: auto;
+    order: 2;
+}
+.barRight button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.5vh;
+    height: 4vh;
+}
+.barRight button:hover{
+
+    background-color: aliceblue;
+    color: black;
+}
+.taskbar{
+
+    background-color: rgb(197, 197, 197);
+    padding: 1vh;
+    height: 94vh;
+}
+.content{
+
+    display: grid;
+    grid-template-columns: 20vw 78vw;
+    grid-column-gap:10px ;
+
+}
+.data{
+    height: 90vh;
+}
+.link{
+
+    text-decoration: none;
+    color: black;
+
+}
+.link:visited{
+
+    
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+table{
+    text-align: center;
+}
+
+
+table td{
+
+    height: 5vh;
+    background-color: rgb(218, 218, 218);
+    font-size: 1.7vh;
+
+}
+table th{
+
+    height: 7vh;
+    background-color: rgb(69, 69, 69);
+    color: white;
+
+}
+
+thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+
+tbody{
+    display: block;
+    height: 70vh;
+    overflow-y: scroll;
+}
+tbody::-webkit-scrollbar{
+    display: none;
+}
+
+.butonRefresh{
+
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 0;
+    width: 4vw;
+    height: 3vh;
+    font-size: 1.5vh;
+    border-radius: 20px;
+
+
+}
+.login{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    height: 100vh;
+}
+.main{
+    color: white;
+    background-color: rgb(98, 98, 98);
+    padding: 30px;
+    height: 60vh;
+    width: 25vw;
+    border-radius: 10px;
+
+}
+.main input{
+
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-top: 0;
+    color: white;
+    font-size: 20px;
+    border-left: 0ch;
+    border-right: 0;
+    border-bottom: 1;
+    padding: 5px;
+    height: 5vh;
+    width: 20vw;
+
+}
+.main input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.main input:focus{
+
+    outline: none;
+
+}
+input:focus::placeholder {
+    color: transparent;
   }
-}
+.main button{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    height: 5vh;
+    width: 15vw;
+    background-color: white;
+    border: 0;
+    border-style: none;
+    border-radius: 10px;
+    
 
-.App-link {
-  color: #61dafb;
 }
+.main button:hover{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    background-color: black;
+    color: white;
+
+}
+code{
+
+    background-color: gainsboro;
+    padding: 4px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+hr{
+    border: 0;
+    height: 0.1px;
+    background-color: rgb(211, 211, 211);
+}
+.guide{
+
+    height: 84vh;
+    overflow-y: scroll;
+
+
+}
+.guide::-webkit-scrollbar{
+    display: none;
+}
+.buble{
+
+    height: 18vh;
+    background-color: rgb(227, 227, 227);
+    padding: 30px;
+    width: 25vw;
+    border-radius: 10px ;
+    font-size: 1.5vh;
+}
+.parent{
+
+    padding: 10px;
+    width: 70vw;
+    height: 70vh;
+    overflow-y: scroll;
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    
+
+}
+.parent::-webkit-scrollbar{
+    display: none;
+}
+.detalii{
+
+    padding: 20px;
+
 }
